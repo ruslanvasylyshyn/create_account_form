@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form__wrapper">
+      <fieldset class="form__legend">
+        <legend>Create an account</legend>
+        <form id="mainForm" onsubmit="return submitData();">
+          <input
+            type="email"
+            name="Email"
+            id="inputEmail"
+            placeholder="Email (required)"
+            required
+          />
+
+          <input
+            type="password"
+            name="Password (required)"
+            id="inputPassword"
+            placeholder="Password (required)"
+            required
+          />
+          <button class="form__button">Submit</button>
+        </form>
+      </fieldset>
+    </div>
+
+    <div class="modal__window">
+      <div class="modal__window-title"></div>
+      <div class="modal__button-wrapper">
+        <button class="modal__window-close" onclick="closeModal()">
+          cancel
+        </button>
+        <button class="modal__window-confirm" onclick="confirmModal()">
+          confirm
+        </button>
+      </div>
+    </div>
+
+    <div class="welcome__user">
+      <h2 id="mainTitle"></h2>
+      <img src="./img/cat.jpg" alt="Котик" />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

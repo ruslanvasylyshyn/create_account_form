@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lavender;
+}
+
+.form__wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__legend {
+  border-radius: 5px;
+}
+
+.form__legend form {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form__legend input {
+  margin: 10px 0;
+  border-radius: 2px;
+  border: 1px solid #000;
+}
+
+.form__button {
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid #000;
+}
+
+.form__button:active {
+  background-color: #fff;
+  border: 1px solid #c4c4f2;
+}
+
+.modal__window {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 250px);
+  display: none;
+  border-radius: 5px;
+  border: 1px solid rebeccapurple;
+  height: 80px;
+  width: 500px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.modal__window-title {
+  height: 50px;
+  line-height: 50px;
+}
+
+.modal__window-title span {
+  font-weight: 700;
+}
+
+.modal__button-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.modal__button-wrapper button {
+  margin-right: 25px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid #000;
+}
+
+.modal__button-wrapper button:active {
+  background-color: #fff;
+  border: 1px solid #c4c4f2;
+}
+
+.welcome__user {
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.welcome__user img {
+  width: 400px;
+}
+
+.modal__visible {
+  display: block;
+}
+
+.welcome__user-visible {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .form__legend form {
+    width: 250px;
+  }
+
+  .form__legend input {
+    margin: 20px 0;
+    height: 20px;
+  }
+
+  .form__button {
+    padding: 5px 20px;
+  }
+
+  .modal__window {
+    height: 150px;
+    width: 280px;
+    top: calc(50% - 75px);
+    left: calc(50% - 140px);
+  }
+
+  .modal__window-title {
+    height: 110px;
+  }
+
+  .modal__button-wrapper {
+    justify-content: space-evenly;
+  }
+
+  .modal__button-wrapper button {
+    padding: 5px 20px;
+    margin: 0;
+  }
+
+  .welcome__user {
+    width: 100vw;
+  }
+
+  .welcome__user img {
+    width: 280px;
+  }
+}
